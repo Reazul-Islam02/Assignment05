@@ -21,16 +21,7 @@
             });
         });
 
-        // document.querySelectorAll('.copy-btn').forEach(btn => {
-        //     btn.addEventListener('click', () => {
-        //         const number = btn.dataset.number;
-        //         navigator.clipboard.writeText(number).then(() => {
-        //             alert('Hotline number copied to clipboard!');
-        //             copyCount++;
-        //             updateDisplays();
-        //         });
-        //     });
-        // });
+
         
      document.querySelectorAll('.copy-btn').forEach(btn => {
     btn.addEventListener('click', () => {
