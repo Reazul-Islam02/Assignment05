@@ -46,11 +46,7 @@
     });
 });
 
-// function updateDisplays() {
-//     loveDisplay.innerHTML = `<span class="mr-1">❤️</span>${loveCount}`;
-//     coinDisplay.innerHTML = `<span class="mr-1">💰</span>${coinCount}`;
-//     copyDisplay.innerHTML = `<span class="mr-1">📋</span>${copyCount} Copy`;
-// }
+
 
         document.querySelectorAll('.call-btn').forEach(btn => {
             btn.addEventListener('click', () => {
