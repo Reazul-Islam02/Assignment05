@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Emergency Service Directory</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-green-50">
+    <!-- Navbar -->
+    <nav
+      class="max-w-[1800px] mx-auto bg-white text-green-600 flex justify-between items-center px-6 py-4 shadow-md"
+    >
+      <div class="flex items-center space-x-3">
+        <span class="text-2xl">
+          <img src="./assets/logo.png" class="w-20 h-20" alt="Logo" />
+        </span>
+        <!-- Emergency Service stacked -->
+        <h1 class="text-xl font-bold leading-tight">
+          Emergency <br />
+          <span class="block">Service</span>
+        </h1>
+      </div>
+
+      <div class="flex items-center space-x-4">
+        <span
+          id="love-count"
+          class="flex items-center bg-green-100 px-3 py-2 rounded-lg"
+        >
+          <span class="mr-1">❤️</span>0
+        </span>
+        <span
+          id="coin-count"
+          class="flex items-center bg-green-100 px-3 py-2 rounded-lg"
+        >
+          <span class="mr-1">💰</span>100
+        </span>
+        <span
+          id="copy-count"
+          class="flex items-center bg-green-400 px-3 py-2 rounded-lg text-white font-medium"
+        >
+          <span class="mr-2">Copy </span>
+        </span>
+      </div>
+    </nav>
+
+    <!-- Wrapper with max width -->
+
+    <!-- Hero Section -->
+    <section
+      class="hero flex flex-col items-center text-center bg-green-700 py-10"
+    >
+      <span class="mb-4">
+        <img src="./assets/logo-dark.png" class="w-28 h-28" alt="Logo" />
+      </span>
+      <div>
+        <h2 class="text-3xl font-bold text-white mb-2">
+          Emergency Service Directory
+        </h2>
+        <p class="text-lg text-white mx-auto">
+          Government Emergency Services at Your Fingertip - A Project by
+          Government of the People's Republic of Bangladesh
+        </p>
+      </div>
+    </section>
+    <div class="max-w-[1800px] mx-auto">
+      <!-- Main Section -->
+      <main class="flex flex-col md:flex-row p-4 gap-4">
+        <!-- Cards Section -->
+        <div
+          class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 flex-1"
+        >
+          <!-- Card 01 -->
+          <div class="card bg-white rounded-lg shadow-md p-4">
+            <div class="flex justify-between items-start">
+              <div class="flex items-start space-x-3">
+                <!-- Image with light red background -->
+                <div
+                  class="bg-red-100 p-2 rounded-lg flex items-center justify-center"
+                >
+                  <img
+                    src="./assets/emergency.png"
+                    alt="Emergency Icon"
+                    class="w-8 h-8 object-contain"
+                  />
+                </div>
+
+                <div>
+                  <h3 class="font-bold">National Emergency Number</h3>
+                  <p class="text-gray-600">All</p>
+                </div>
+              </div>
+              <span class="heart cursor-pointer text-2xl">❤️</span>
+            </div>
+            <p class="text-xl font-bold my-2">999</p>
+            <span
+              class="bg-green-100 text-green-700 text-sm font-medium px-2 py-1 rounded"
+              >All</span
+            ><br /><br />
+
+            <div class="flex space-x-2">
+              <button
+                class="copy-btn flex-1 bg-blue-100 text-blue-600 py-2 rounded flex items-center justify-center"
+                data-number="999"
+              >
+                <span class="mr-1">📋</span> Copy
+              </button>
+              <button
+                class="call-btn flex-1 bg-green-500 text-white py-2 rounded flex items-center justify-center"
+                data-name="National Emergency Number"
+                data-number="999"
+              >
+                <span class="mr-1">📞</span> Call
+              </button>
+            </div>
+          </div>
+          <!-- Card 02 -->
+          <div class="card bg-white rounded-lg shadow-md p-4">
+            <div class="flex justify-between items-start">
+              <div class="flex items-start space-x-3">
+                <!-- Image with light red background -->
+                <div
+                  class="bg-red-100 p-2 rounded-lg flex items-center justify-center"
+                >
+                  <img
+                    src="./assets/police.png"
+                    alt="Emergency Icon"
+                    class="w-8 h-8 object-contain"
+                  />
+                </div>
+
+                <div>
+                  <h3 class="font-bold">Police Helpline Number</h3>
+                  <p class="text-gray-600">Police</p>
+                </div>
+              </div>
+              <span class="heart cursor-pointer text-2xl">❤️</span>
+            </div>
+            <p class="text-xl font-bold my-2">999</p>
+            <span
+              class="bg-green-100 text-green-700 text-sm font-medium px-2 py-1 rounded"
+              >Police</span
+            ><br /><br />
+
+            <div class="flex space-x-2">
+              <button
+                class="copy-btn flex-1 bg-blue-100 text-blue-600 py-2 rounded flex items-center justify-center"
+                data-number="999"
+              >
+                <span class="mr-1">📋</span> Copy
+              </button>
+              <button
+                class="call-btn flex-1 bg-green-500 text-white py-2 rounded flex items-center justify-center"
+                data-name="National Emergency Number"
+                data-number="999"
+              >
+                <span class="mr-1">📞</span> Call
+              </button>
+            </div>
+          </div>
+          <!-- Card 03 -->
+          <div class="card bg-white rounded-lg shadow-md p-4">
+            <div class="flex justify-between items-start">
+              <div class="flex items-start space-x-3">
+                <!-- Image with light red background -->
+                <div
+                  class="bg-red-100 p-2 rounded-lg flex items-center justify-center"
+                >
+                  <img
+                    src="./assets/fire-service.png"
+                    alt="Emergency Icon"
+                    class="w-8 h-8 object-contain"
+                  />
+                </div>
+
+                <div>
+                  <h3 class="font-bold">Fire Service Number</h3>
+                  <p class="text-gray-600">Fire Service</p>
+                </div>
+              </div>
+              <span class="heart cursor-pointer text-2xl">❤️</span>
+            </div>
+            <p class="text-xl font-bold my-2">999</p>
+            <span
+              class="bg-green-100 text-green-700 text-sm font-medium px-2 py-1 rounded"
+              >Fire</span
+            ><br /><br />
+
+            <div class="flex space-x-2">
+              <button
+                class="copy-btn flex-1 bg-blue-100 text-blue-600 py-2 rounded flex items-center justify-center"
+                data-number="999"
+              >
+                <span class="mr-1">📋</span> Copy
+              </button>
+              <button
+                class="call-btn flex-1 bg-green-500 text-white py-2 rounded flex items-center justify-center"
+                data-name="National Emergency Number"
+                data-number="999"
+              >
+                <span class="mr-1">📞</span> Call
+              </button>
+            </div>
+          </div>
+          <!-- Card 04 -->
+          <div class="card bg-white rounded-lg shadow-md p-4">
+            <div class="flex justify-between items-start">
+              <div class="flex items-start space-x-3">
+                <!-- Image with light red background -->
+                <div
+                  class="bg-red-100 p-2 rounded-lg flex items-center justify-center"
+                >
+                  <img
+                    src="./assets/ambulance.png"
+                    alt="Emergency Icon"
+                    class="w-8 h-8 object-contain"
+                  />
+                </div>
+
+                <div>
+                  <h3 class="font-bold">Ambulance Service</h3>
+                  <p class="text-gray-600">Ambulance</p>
+                </div>
+              </div>
+              <span class="heart cursor-pointer text-2xl">❤️</span>
+            </div>
+            <p class="text-xl font-bold my-2">1994-999999</p>
+            <span
+              class="bg-green-100 text-green-700 text-sm font-medium px-2 py-1 rounded"
+              >Health</span
+            ><br /><br />
+
+            <div class="flex space-x-2">
+              <button
+                class="copy-btn flex-1 bg-blue-100 text-blue-600 py-2 rounded flex items-center justify-center"
+                data-number="1994-999999"
+              >
+                <span class="mr-1">📋</span> Copy
+              </button>
+              <button
+                class="call-btn flex-1 bg-green-500 text-white py-2 rounded flex items-center justify-center"
+                data-name="National Emergency Number"
+                data-number="1994-999999"
+              >
+                <span class="mr-1">📞</span> Call
+              </button>
+            </div>
+          </div>
+          <!-- Card 05 -->
+          <div class="card bg-white rounded-lg shadow-md p-4">
+            <div class="flex justify-between items-start">
+              <div class="flex items-start space-x-3">
+                <!-- Image with light red background -->
+                <div
+                  class="bg-red-100 p-2 rounded-lg flex items-center justify-center"
+                >
+                  <img
+                    src="./assets/emergency.png"
+                    alt="Emergency Icon"
+                    class="w-8 h-8 object-contain"
+                  />
+                </div>
+
+                <div>
+                  <h3 class="font-bold">Women & Child Helpline</h3>
+                  <p class="text-gray-600">Women & Child Helpline</p>
+                </div>
+              </div>
+              <span class="heart cursor-pointer text-2xl">❤️</span>
+            </div>
+            <p class="text-xl font-bold my-2">109</p>
+            <span
+              class="bg-green-100 text-green-700 text-sm font-medium px-2 py-1 rounded"
+              >Help</span
+            ><br /><br />
+
+            <div class="flex space-x-2">
+              <button
+                class="copy-btn flex-1 bg-blue-100 text-blue-600 py-2 rounded flex items-center justify-center"
+                data-number="109"
+              >
+                <span class="mr-1">📋</span> Copy
+              </button>
+              <button
+                class="call-btn flex-1 bg-green-500 text-white py-2 rounded flex items-center justify-center"
+                data-name="National Emergency Number"
+                data-number="109"
+              >
+                <span class="mr-1">📞</span> Call
+              </button>
+            </div>
+          </div>
+
+          <!-- Card 06-->
+          <div class="card bg-white rounded-lg shadow-md p-4">
+            <div class="flex justify-between items-start">
+              <div class="flex items-start space-x-3">
+                <!-- Image with light red background -->
+                <div
+                  class="bg-red-100 p-2 rounded-lg flex items-center justify-center"
+                >
+                  <img
+                    src="./assets/emergency.png"
+                    alt="Emergency Icon"
+                    class="w-8 h-8 object-contain"
+                  />
+                </div>
+
+                <div>
+                  <h3 class="font-bold">Anti-Corruption Helpline</h3>
+                  <p class="text-gray-600">Anti-Corruption</p>
+                </div>
+              </div>
+              <span class="heart cursor-pointer text-2xl">❤️</span>
+            </div>
+            <p class="text-xl font-bold my-2">106</p>
+            <span
+              class="bg-green-100 text-green-700 text-sm font-medium px-2 py-1 rounded"
+              >Govt.</span
+            ><br /><br />
+
+            <div class="flex space-x-2">
+              <button
+                class="copy-btn flex-1 bg-blue-100 text-blue-600 py-2 rounded flex items-center justify-center"
+                data-number="106"
+              >
+                <span class="mr-1">📋</span> Copy
+              </button>
+              <button
+                class="call-btn flex-1 bg-green-500 text-white py-2 rounded flex items-center justify-center"
+                data-name="National Emergency Number"
+                data-number="106"
+              >
+                <span class="mr-1">📞</span> Call
+              </button>
+            </div>
+          </div>
+
+          <!-- Card 07 -->
+          <div class="card bg-white rounded-lg shadow-md p-4">
+            <div class="flex justify-between items-start">
+              <div class="flex items-start space-x-3">
+                <!-- Image with light red background -->
+                <div
+                  class="bg-red-100 p-2 rounded-lg flex items-center justify-center"
+                >
+                  <img
+                    src="./assets/emergency.png"
+                    alt="Emergency Icon"
+                    class="w-8 h-8 object-contain"
+                  />
+                </div>
+
+                <div>
+                  <h3 class="font-bold">Electricty Helpline</h3>
+                  <p class="text-gray-600">Electricty Outage</p>
+                </div>
+              </div>
+              <span class="heart cursor-pointer text-2xl">❤️</span>
+            </div>
+            <p class="text-xl font-bold my-2">16216</p>
+            <span
+              class="bg-green-100 text-green-700 text-sm font-medium px-2 py-1 rounded"
+              >Electricty</span
+            ><br /><br />
+
+            <div class="flex space-x-2">
+              <button
+                class="copy-btn flex-1 bg-blue-100 text-blue-600 py-2 rounded flex items-center justify-center"
+                data-number="16216"
+              >
+                <span class="mr-1">📋</span> Copy
+              </button>
+              <button
+                class="call-btn flex-1 bg-green-500 text-white py-2 rounded flex items-center justify-center"
+                data-name="National Emergency Number"
+                data-number="16216"
+              >
+                <span class="mr-1">📞</span> Call
+              </button>
+            </div>
+          </div>
+          <!-- Card 08 -->
+          <div class="card bg-white rounded-lg shadow-md p-4">
+            <div class="flex justify-between items-start">
+              <div class="flex items-start space-x-3">
+                <!-- Image with light red background -->
+                <div
+                  class="bg-red-100 p-2 rounded-lg flex items-center justify-center"
+                >
+                  <img
+                    src="./assets/brac.png"
+                    alt="Emergency Icon"
+                    class="w-8 h-8 object-contain"
+                  />
+                </div>
+
+                <div>
+                  <h3 class="font-bold">Brac Helpline</h3>
+                  <p class="text-gray-600">Brac</p>
+                </div>
+              </div>
+              <span class="heart cursor-pointer text-2xl">❤️</span>
+            </div>
+            <p class="text-xl font-bold my-2">109</p>
+            <span
+              class="bg-green-100 text-green-700 text-sm font-medium px-2 py-1 rounded"
+              >NGO</span
+            ><br /><br />
+
+            <div class="flex space-x-2">
+              <button
+                class="copy-btn flex-1 bg-blue-100 text-blue-600 py-2 rounded flex items-center justify-center"
+                data-number="109"
+              >
+                <span class="mr-1">📋</span> Copy
+              </button>
+              <button
+                class="call-btn flex-1 bg-green-500 text-white py-2 rounded flex items-center justify-center"
+                data-name="National Emergency Number"
+                data-number="109"
+              >
+                <span class="mr-1">📞</span> Call
+              </button>
+            </div>
+          </div>
+
+          <!-- Card 09-->
+          <div class="card bg-white rounded-lg shadow-md p-4">
+            <div class="flex justify-between items-start">
+              <div class="flex items-start space-x-3">
+                <!-- Image with light red background -->
+                <div
+                  class="bg-red-100 p-2 rounded-lg flex items-center justify-center"
+                >
+                  <img
+                    src="./assets/Bangladesh-Railway.png"
+                    alt="Emergency Icon"
+                    class="w-8 h-8 object-contain"
+                  />
+                </div>
+
+                <div>
+                  <h3 class="font-bold">Bangladesh Railway Helpline</h3>
+                  <p class="text-gray-600">Bangladesh Railway</p>
+                </div>
+              </div>
+              <span class="heart cursor-pointer text-2xl">❤️</span>
+            </div>
+            <p class="text-xl font-bold my-2">106</p>
+            <span
+              class="bg-green-100 text-green-700 text-sm font-medium px-2 py-1 rounded"
+              >Travel</span
+            ><br /><br />
+
+            <div class="flex space-x-2">
+              <button
+                class="copy-btn flex-1 bg-blue-100 text-blue-600 py-2 rounded flex items-center justify-center"
+                data-number="106"
+              >
+                <span class="mr-1">📋</span> Copy
+              </button>
+              <button
+                class="call-btn flex-1 bg-green-500 text-white py-2 rounded flex items-center justify-center"
+                data-name="National Emergency Number"
+                data-number="106"
+              >
+                <span class="mr-1">📞</span> Call
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- History Section -->
+        <div class="history bg-white rounded-lg shadow-md p-4 w-full md:w-80">
+          <div class="flex justify-between items-center mb-4">
+            <h2 class="font-bold flex items-center">
+              <span class="mr-2">🕒</span>Call History
+            </h2>
+            <button
+              id="clear-history"
+              class="bg-green-500 text-white px-3 py-1 rounded-lg text-sm"
+            >
+              Clear
+            </button>
+          </div>
+          <ul id="history-list" class="space-y-2"></ul>
+        </div>
+      </main>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
